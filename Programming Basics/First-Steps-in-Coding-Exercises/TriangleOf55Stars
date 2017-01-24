@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TriangleOf55Stars2
+namespace TriangleOf55Stars
 {
     class Program
     {
@@ -12,7 +12,11 @@ namespace TriangleOf55Stars2
         {
             for (int i = 0; i < 11; i++)
             {
-                Console.WriteLine(new string('*', i));
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
         }
     }
