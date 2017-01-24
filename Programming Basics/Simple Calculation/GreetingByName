@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace USDToBGN
+namespace GreetingByName
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double usd = double.Parse(Console.ReadLine());
-            double rate = 1.79549;
-            double bgn = usd * rate;
-            Console.WriteLine("{0:f2} BGN", bgn);
+            string name = Console.ReadLine();
+            Console.WriteLine("Hello, {0}!", name);
         }
     }
 }
